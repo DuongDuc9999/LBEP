@@ -1,0 +1,25 @@
+#include <stdio.h>
+int  main (){
+	int ary[10];
+	int i;
+	int total=0;
+	int max =0;
+	int min =0;
+	for (i=0;i<10;i++){
+		printf("\nnhap so thu %d",i+1);
+		scanf ("%d",&ary[i]);
+		if(i==0){
+			min=ary[0];
+			max=ary[0];
+			
+		}
+		if(max<ary[i]) max = ary [i];
+		if(min>ary[i]) min = ary [i];
+		total +=ary[i];
+	}
+	printf ("\nmax = %d",max);
+	printf ("\nmin = %d",min);
+	printf ("\n total =%d",total);
+	printf ("\n trung binh cong = %d",total/10);
+	
+	}
